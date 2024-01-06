@@ -13,6 +13,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@shlack/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@shlack/utils@workspace:packages/utils"
+  languageName: unknown
+  linkType: soft
+
 "js-ts-monotrepos@workspace:.":
   version: 0.0.0-use.local
   resolution: "js-ts-monotrepos@workspace:."
