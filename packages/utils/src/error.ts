@@ -6,7 +6,7 @@
  */
 function stringifyErrorValue(err: Error): string {
   return `${err.name.toUpperCase()}: ${err.message}
-  ${err.stack || '(no stack trace information)'}`;
+  ${err.stack || "(no stack trace information)"}`;
 }
 
 /**
@@ -21,8 +21,8 @@ export function stringifyError(errorDescription: string, err: unknown): string {
     err instanceof Error
       ? stringifyErrorValue(err)
       : err
-      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
-      ? '' + err
-      : '(missing error information)'
+      ? // eslint-disable-next-line @typescript-eslint/restrict-plus-operands, @typescript-eslint/no-base-to-string
+        "" + err
+      : "(missing error information)"
   }`;
 }
