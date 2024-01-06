@@ -14,7 +14,7 @@ function stringifyErrorValue(err: Error): string {
  *
  * @param errorDescription
  * @param err
- *
+ * Some comment
  */
 export function stringifyError(errorDescription: string, err: unknown): string {
   return `${errorDescription}\n${
