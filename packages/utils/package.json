@@ -7,10 +7,10 @@
     "access": "public"
   },
   "scripts": {
-    "test": "jest",
     "clean": "rimraf dist *.tsbuildinfo",
-    "build": "tsc -b .",
-    "lint": "eslint src --ext js,ts"
+    "test": "scripty",
+    "build": "scripty",
+    "lint": "scripty"
   },
   "dependencies": {
     "date-fns": "^2.16.1",
@@ -28,5 +28,8 @@
   "volta": {
     "node": "16.14.2",
     "yarn": "1.22.18"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
   }
 }
